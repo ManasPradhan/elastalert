@@ -19,7 +19,6 @@ LABEL org.label-schema.vcs-type="git" \
 
 WORKDIR /opt
 
-RUN yum -y update
 
 RUN yum -y install \
     ca-certificates \
@@ -30,6 +29,8 @@ RUN yum -y install \
     libffi-devel \
     openssl-devel \
     build-essential
+
+RUN yum clean all
 
 RUN yum -y install \
   python-pip \
