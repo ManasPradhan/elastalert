@@ -45,7 +45,7 @@ timeframe:
 # (Required, spike specific)
 # The spike rule matches when the current window contains spike_height times more
 # events than the reference window
-spike_height: 2
+spike_height: 3
 
 # (Required, spike specific)
 # The direction of the spike
@@ -67,6 +67,7 @@ filter:
 
 top_count_keys:
     - failureCode
+    - guid
 
 
 # (Required)
